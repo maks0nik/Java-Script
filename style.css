@@ -1,0 +1,126 @@
+.list {
+  /* Таблица студентов */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 2px solid white;
+  border-collapse: collapse;
+  background-color: #bc8f8f;
+  box-shadow: 0 0 5px 2px;
+  text-align: center;
+  height: 40%;
+}
+.list tr {
+  height: 30px;
+}
+.list th {
+  background: grey;
+}
+
+#app {
+  /* Кнопка "добавить" */
+  height: 30px;
+  width: 80px;
+  margin-left: auto;
+  margin-right: 0em;
+  margin-top: 2em;
+  box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+}
+
+#delete {
+  /* Кнопка "удалить" */
+  height: 30px;
+  width: 80px;
+}
+
+.udal {
+  /* Кнопки "Да" и "Нет" */
+  width: 140px;
+  height: 35px;
+}
+
+.ne_udal {
+  /* Кнопки "Да" и "Нет" */
+  width: 140px;
+  height: 35px;
+}
+
+* {
+  /* Для всей страницы параметры */
+  margin: 0;
+  padding: 0;
+}
+
+#ud {
+  /*Таблица на форме удаления*/
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#deli {
+  /* кнопка добавить на форме "Добавление" "*/
+  width: 140px;
+  height: 35px;
+}
+
+.end {
+  /* Форма для удаления(таблица) */
+  border: 1px solid black;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 10;
+  width: 300px;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dob {
+  /* Всплывающее окно добавления */
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.izm {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#dob-sbm-btn{
+  width: 140px;
+  height: 35px;
+}
+
+.vihod {
+  /* Форма удаления */
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}

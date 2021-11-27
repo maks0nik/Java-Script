@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Студенты ЦПИ-11</title>
+</head>
+<body>
+<table class="list" id="tb" border="1">
+  <thead>
+    <caption><h2>Студенты ЦПИ-11</h2></caption><br>
+      <tr>
+        <th>Пол</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Телефон</th>
+        <th>Изменить</th>
+        <th>Удаление</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+        <td>Муж</td>
+        <td>Максим</td>
+        <td>Варфоломеев</td>
+        <td>88005055447</td>
+        <td><a class="reload" href="##" onclick="onEdit(this)" >Изменить</a></td>
+        <td><a href="##" class="udalenie">Удалить</a></td>
+      </tr>
+      <tr>
+        <td>Жен</td>
+        <td>Ксения</td>
+        <td>Рыбина</td>
+        <td>88005055447</td>
+        <td><a class="reload" href="##" onclick="onEdit(this)">Изменить</a></td>
+        <td><a href="##" class="udalenie">Удалить</a></td>
+      </tr>
+      <tr>
+        <td>Муж</td>
+        <td>Влад</td>
+        <td>Себов</td>
+        <td>88005055447</td>
+        <td><a class="reload" href="##" onclick="onEdit(this)">Изменить</a></td>
+        <td><a href="##" class="udalenie">Удалить</a></td></tr>
+      <tr>
+        <td>Муж</td><td >Евгений</td>
+        <td>Федотов</td>
+        <td>88005055447</td>
+        <td><a class="reload" href="##" onclick="onEdit(this)">Изменить</a></td>
+        <td><a href="##" class="udalenie">Удалить</a></td></tr>
+      <tr>
+        <td>Муж</td>
+        <td>Иван</td>
+        <td>Великоредчанин</td>
+        <td>88005055447</td>
+        <td><a class="reload" href="##" onclick="onEdit(this)">Изменить</a></td>
+        <td><a href="##" class="udalenie" >Удалить</a></td></tr>
+      <tr>
+        <td>Муж</td>
+        <td>Стас</td>
+        <td>Демчук</td>
+        <td> 88005055447</td>
+        <td><a class="reload" href="##" onclick="onEdit(this)">Изменить</a></td>
+        <td><a href="##" class="udalenie">Удалить</a></td></tr>
+        <tbody>
+      </tbody>
+</table>
+
+
+<div id="izm" class="izm" style="display: none;">
+  <table class="end" bgcolor="#FFFFFF" >
+    <tr>
+      <td height="10" colspan="2"><p align="right"><a align="right" href="##" class="close">X</a></p></td>
+    </tr>
+    <tr><td height="50" colspan="2"><center>
+  <h2>Форма для изменения </h2>
+  <tr>
+    <td colspan="2"  height="20">
+      <form autocomplete="off">
+        <div>
+          <label><big>Укажите пол (Муж/Жен):</big></label>
+          <input type="text" id="sex" placeholder="Муж/Жен" name="sex" bgcolor="#CCFF99">
+        </div>
+        <div>
+          <label><big>Укажите имя:</big></label><br />
+          <input type="text" id="name" placeholder="Имя" name="name" bgcolor="#CCFF99">
+        </div>
+        <div>
+          <label><big>Укажите фамилию: </big></label>
+          <input type="text" id="surname"placeholder="Фамилия"name="surname" bgcolor="#CCFF99">
+        </div>
+        <div>
+          <label><big>Укажите телефон:</big></label>
+          <input type="text" id="telephone" placeholder="Телефон" name="telephone" bgcolor="#CCFF99">
+        </div><br />
+        <input  class="udal sbm-chng-btn" type="submit" value="Изменить"><button class="close ne_udal"  type="button" name="button_net">Отмена</button><br/>
+      </form>
+    </td>
+  </table>
+</div>
+
+
+<div id="dob" class="dob" style="display: none;">
+  <table class="end" bgcolor="#FFFFFF" >
+    <tr>
+      <td height="10" colspan="2"><p align="right"><a align="right" href="##" class="close">X</a></p></td>
+    </tr>
+    <tr><td height="50" colspan="2"><center>
+  <h2>Форма для добавления </h2>
+  <tr>
+    <td colspan="2"  height="20">
+      <form autocomplete="off">
+        <div>
+          <label><big>Укажите пол (Муж/Жен):</big></label>
+          <input type="text"  placeholder="Муж/Жен" name="sex" bgcolor="#CCFF99">
+        </div>
+        <div>
+          <label><big>Укажите имя:</big></label><br />
+          <input type="text"  placeholder="Имя" name="name" bgcolor="#CCFF99">
+        </div>
+        <div>
+          <label><big>Укажите фамилию: </big></label>
+
+          <input type="text" placeholder="Фамилия"name="surname" bgcolor="#CCFF99">
+        </div>
+        <div>
+          <label><big>Укажите телефон:</big></label>
+          <input type="text"  placeholder="Телефон" name="telephone" bgcolor="#CCFF99">
+        </div><br />
+        <input class="udal dob-sbm-btn"  type="submit" value="Добавить"><button class="ne_udal close"  type="button" name="button_net">Отмена</button><br />
+      </form>
+    </td>
+
+
+  </table>
+</div>
+
+
+
+<div class="vihod" id="vihod" style="display: none;">
+<table id="ud" width="300" height="100" bgcolor="#FFFFFF" >
+<tbody>
+ <tr><td colspan="2"><center>
+   <small><p align="right"><a align="right" href="##" class="close">X</a></p></small>
+<h2>Вы действительно хотите удалить?</h2>
+    <tr><td ><button  class ="bdel udal" type="button" name="button_da" >Да</button></td>
+      <td ><button  class = "bdel bdel-ne_udal ne_udal" type="button" name="button_net">Нет</button></td>
+    </tr>
+ </table>
+ </tbody>
+</table>
+</div>
+
+<button class="open" id="app">Добавить</button>
+<script src="script.js">
+
+</script>
+
+</body>
+</html>
